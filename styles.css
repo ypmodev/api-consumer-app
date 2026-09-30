@@ -1,0 +1,190 @@
+:root {
+  --font-main: "Segoe UI", Arial, sans-serif;
+  --color-text: #1f2937;
+  --color-bg: #f3f4f6;
+  --max-width: 1100px;
+  --button-color: #294e9e;
+  --button-border: #355fbb;
+  --button-hover: #1d4ed8;
+
+  --color-primary: #2563eb;
+  --color-surface: #ffffff;
+  --color-white: #ffffff;
+  --color-border: #d1d5db;
+
+  --space-sm: 10px;
+  --space-md: 16px;
+  --space-lg: 24px;
+
+  --radius-md: 8px;
+  --transition-fast: 0.2s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.hidden {
+  display: none;
+}
+
+header h1 {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.controls select,
+.controls input,
+.controls button {
+  padding: var(--space-sm) 14px;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.controls input {
+  flex: 1 1 220px;
+  max-width: 360px;
+}
+
+.controls select:focus,
+.controls input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.controls button {
+  background-color: var(--button-color);
+  border-color: var(--button-border);
+  color: var(--color-white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.controls button:hover {
+  background-color: var(--button-hover);
+}
+
+#loading {
+  text-align: center;
+  padding: var(--space-md);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+#error {
+  padding: 12px var(--space-md);
+  margin-bottom: var(--space-md);
+  background-color: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-left: 5px solid #dc2626;
+  border-radius: var(--radius-md);
+  color: #991b1b;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-md);
+}
+
+.card {
+  padding: var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  color: #111827;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.card .card-id {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  background-color: #dbeafe;
+  border-radius: 999px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: var(--space-lg);
+}
+
+.pagination button {
+  min-width: 40px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #eff6ff;
+  border-color: var(--color-primary);
+}
+
+.pagination button:disabled {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: not-allowed;
+}
