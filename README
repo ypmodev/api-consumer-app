@@ -1,0 +1,52 @@
+# Consumo de datos de API con Fetch y Axios
+
+**Descripción:**  
+Aplicación web para consumir y mostrar datos de una API utilizando Fetch y Axios. Incluye búsqueda, paginación, estados de carga y gestión de errores.
+
+## 📁 Estructura del proyecto
+
+```text
+/
+├── index.html
+├── styles.css
+└── main.js
+```
+
+## 🛠️ Tecnologías
+
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- Axios
+
+## 🔗 API utilizada
+
+- JSONPlaceholder
+  https://jsonplaceholder.typicode.com/posts
+
+## 🚀 Funcionalidades
+
+- Consumo de datos mediante Fetch.
+- Consumo de datos mediante Axios.
+- Búsqueda de posts.
+- Paginación de resultados.
+- Indicador de carga.
+- Mensajes de error.
+- Validación del campo de búsqueda.
+- Posibilidad de cambiar entre Fetch y Axios.
+
+## ⚙️ Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone <https://github.com/ypmodev/api-consumer-app.git>
+```
+
+2. Abrir el proyecto en Visual Studio Code.
+3. Abrir `index.html` en el navegador o utilizar una extensión como Live Server.
+
+## 👤 Autor
+
+Yanet Pérez
