@@ -13,18 +13,26 @@
         <h1>Consumo de datos de API con Fetch y Axios</h1>
 
         <section class="controls">
-          <select id="apiSelector">
+          <select id="apiSelector" aria-label="Seleccionar método API">
+            <option value="" disabled selected>
+              Seleccionar método API...
+            </option>
             <option value="fetch">Utiliza Fetch</option>
             <option value="axios">Utiliza Axios</option>
           </select>
 
-          <input type="text" id="searchInput" placeholder="Buscar posts..." />
+          <input
+            type="text"
+            id="searchInput"
+            aria-label="Introduce el término de búsqueda"
+            placeholder="Buscar posts..."
+          />
           <button id="fetchButton">Obtener Datos</button>
         </section>
       </header>
 
       <main>
-        <div class="messages">
+        <div class="messages" aria-live="polite">
           <p id="loading" class="hidden">Cargando...</p>
           <p id="error" class="hidden"></p>
         </div>
