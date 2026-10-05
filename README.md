@@ -1,7 +1,8 @@
 # Consumo de datos de API con Fetch y Axios
 
 **Descripción:**  
-Aplicación web que consulta la API pública JSONPlaceholder y muestra los resultados (posts) en tarjetas, permitiendo elegir si las peticiones se hacen con Fetch o con Axios. Incluye búsqueda, paginación, estados de carga y gestión de errores.
+Aplicación web que consulta la API pública JSONPlaceholder y muestra los resultados (posts) en tarjetas, permitiendo elegir si las peticiones se hacen con Fetch o con Axios.
+Incluye búsqueda, paginación, estados de carga y gestión de errores.
 
 ## 📁 Estructura del proyecto
 
@@ -18,8 +19,8 @@ api-consumer-app/
 - HTML5
 - CSS3
 - JavaScript
-- Fetch API
 - Axios
+- Fetch API
 
 ## 🔗 API utilizada
 
