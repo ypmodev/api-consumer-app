@@ -32,6 +32,7 @@ function hideError() {
 function setupPagination(totalItems) {
   paginationContainer.textContent = "";
   const totalPages = Math.ceil(totalItems / itemsPerPage);
+
   for (let i = 1; i <= totalPages; i++) {
     const button = document.createElement("button");
     button.textContent = i;
@@ -89,8 +90,8 @@ function displayResults(items, totalItems) {
     card.innerHTML = `
     <h3>${item.title}</h3>
     <p>${item.body}</p>
-    <p>${item.id}</p>
-  `;
+    <p>${item.id}</p>`;
+
     resultsContainer.appendChild(card);
   }
   setupPagination(totalItems);
